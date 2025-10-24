@@ -4,6 +4,7 @@
     { "src": "public/(.*)", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "/ai-school/articles/(.*)", "dest": "/public/articles/$1" },
     { "src": "/ai-school", "dest": "/index.html" },
     { "src": "/ai-school/", "dest": "/index.html" },
     { "src": "/ai-school/(.*)", "dest": "/index.html" },
