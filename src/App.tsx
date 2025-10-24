@@ -433,122 +433,122 @@ const App = () => {
             <h2 className="text-2xl font-extrabold">記事一覧</h2>
             <ul className="mt-8 grid gap-4 text-sm sm:grid-cols-2 lg:grid-cols-3">
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/aichi_prefectural_university_data_science_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/aichi_prefectural_university_data_science_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   愛知県立大学でデータサイエンスを学ぶ！学部・入試・キャリアを徹底解説
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_ai_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_ai_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   データサイエンスとAIの基礎からキャリアまで|文系出身者向け学習ガイド
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_ai_agent_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_ai_agent_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   データサイエンスとAIエージェントが拓く未来！業務効率化とビジネス成長の秘訣
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_ai_alternative_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_ai_alternative_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   データサイエンティストはAIに代替される？未来を切り拓くキャリア戦略
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_ai_certification_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_ai_certification_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   データサイエンス・AI資格でキャリアを拓く！選び方と学習法
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_ai_difference_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_ai_difference_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   はじめての家庭菜園完全ガイド｜土作りから収穫まで、心豊かなベランダ菜園のすすめ
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_ai_education_program_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_ai_education_program_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   「nan」の向こう側へ：数値化できない「ゆたかさ」を見つける旅
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_ai_relationship.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_ai_relationship.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   未経験・文系でもわかる！データサイエンスとAIの関係性＆キャリアパス
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_ai_responsibility_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_ai_responsibility_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   データサイエンスとAIの責任問題：PMが知るべき法的・倫理的課題と実践的対策
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_ai_utilization_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_ai_utilization_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   データサイエンスとAI活用で営業力強化！導入メリットと成功事例
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_aichi_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_aichi_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   データサイエンスを愛知県で学ぶ！社会人向け学習方法とキャリア戦略
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_finance_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_finance_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   金融業界を革新するデータサイエンスの力！活用事例とキャリアパスを徹底解説
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_finance_job_search_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_finance_job_search_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   データサイエンスで金融業界へ転職！成功の鍵とキャリアパスを徹底解説
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_financial_engineering_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_financial_engineering_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   金融アナリスト必見！データサイエンス×金融工学で拓くキャリア
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_icon_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_icon_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   【無料あり】データサイエンスアイコンの選び方と活用術！資料・ブログで差をつける
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_stock_investment_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_stock_investment_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   データサイエンスを株式投資に活用！安定利益へ導く実践手法
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/data_science_stock_price_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/data_science_stock_price_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   データサイエンスで株価を予測！分析手法から実践まで徹底解説
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/math_data_science_ai_education_program_completion_certificate_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/math_data_science_ai_education_program_completion_certificate_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   数理・データサイエンス・AI教育プログラム修了証で市場価値向上！文系でも実践スキルを学ぶ
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/mathematical_data_science_ai_education_program_certification_scheme_benefits_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/mathematical_data_science_ai_education_program_certification_scheme_benefits_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   【文系学生必見】数理・DS・AI教育プログラム認定制度のメリットとキャリア活用術
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/mathematical_data_science_ai_education_program_job_hunting_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/mathematical_data_science_ai_education_program_job_hunting_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   文系でも就活有利に！数理・データサイエンス・AI教育プログラムの全貌
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/mathematical_data_science_ai_education_program_open_badge_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/mathematical_data_science_ai_education_program_open_badge_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   数理・データサイエンス・AI教育プログラム×オープンバッジで市場価値を高める！
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/mathematical_data_science_ai_education_program_university_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/mathematical_data_science_ai_education_program_university_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   文系出身者必見！大学の数理・データサイエンス・AI教育プログラムで未来を掴む
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/mathematics_data_science_ai_education_program_resume_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/mathematics_data_science_ai_education_program_resume_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   【26歳プログラマー向け】数理・データサイエンス・AI教育プログラムの履歴書活用法
                 </a>
               </li>
               <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <a href="/articles/nihon_soken_financial_data_science_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                <a href="articles/nihon_soken_financial_data_science_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
                   日本総研が牽引する金融データサイエンス最前線：実践事例とキャリアパス
                 </a>
               </li>
