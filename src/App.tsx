@@ -1,0 +1,637 @@
+const App = () => {
+  return (
+    <div className="bg-white text-slate-900">
+      {/* Header (sticky) */}
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+          <a href="#" className="flex items-center gap-2 font-semibold" aria-label="ホームへ">
+            <img src="https://placehold.co/32x32" alt="スクールロゴ（仮）" className="h-8 w-8 rounded" />
+            <span>生成AI実務スクール</span>
+          </a>
+          <nav className="hidden items-center gap-6 text-sm md:flex" aria-label="メインメニュー">
+            <a href="#social-proof" className="hover:text-indigo-700">
+              実績
+            </a>
+            <a href="#problems" className="hover:text-indigo-700">
+              課題
+            </a>
+            <a href="#value" className="hover:text-indigo-700">
+              解決価値
+            </a>
+            <a href="#curriculum" className="hover:text-indigo-700">
+              カリキュラム
+            </a>
+            <a href="#pricing" className="hover:text-indigo-700">
+              料金
+            </a>
+            <a href="#flow" className="hover:text-indigo-700">
+              受講の流れ
+            </a>
+            <a href="#faq" className="hover:text-indigo-700">
+              FAQ
+            </a>
+          </nav>
+          <div className="flex items-center gap-2">
+            <a
+              href="#cta"
+              className="hidden rounded-xl bg-slate-900 px-3 py-2 text-sm font-medium text-white sm:inline-flex"
+            >
+              メール登録
+            </a>
+            <a href="#cta" className="inline-flex rounded-xl bg-emerald-600 px-3 py-2 text-sm font-semibold text-white">
+              LINE登録
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        {/* Hero */}
+        <section id="hero" className="bg-slate-50 pb-16 pt-28">
+          <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+            <div>
+              <h1 className="text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
+                毎月5,000円以下で“質問し放題”生成AIスクール
+              </h1>
+              <p className="mt-5 text-lg text-slate-700">
+                動画＋テンプレ＋小テストでサクッと学び、分からない所は24時間いつでも質問できます。まずは自動回答、必要に応じて人のサポートにエスカレーション。学びが止まりません。
+              </p>
+              <div className="mt-6 flex flex-wrap items-center gap-3">
+                <a
+                  href="#cta"
+                  className="inline-flex w-full items-center justify-center rounded-2xl bg-emerald-600 px-5 py-3 font-semibold text-white sm:w-auto"
+                >
+                  LINE登録（特典配布）
+                </a>
+                <a
+                  href="#cta"
+                  className="inline-flex w-full items-center justify-center rounded-2xl border border-slate-200 bg-white px-5 py-3 font-semibold sm:w-auto"
+                >
+                  メールで資料を受け取る
+                </a>
+              </div>
+              <ul className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-3">
+                <li className="rounded-xl border bg-white p-3">24h LINEチャットボット</li>
+                <li className="rounded-xl border bg-white p-3">GPTアシスタント Q&amp;A</li>
+                <li className="rounded-xl border bg-white p-3">動画/テンプレ/小テスト</li>
+              </ul>
+            </div>
+            <figure className="relative">
+              <img
+                src="https://placehold.co/800x600"
+                alt="ダッシュボードUIのイメージ（仮）"
+                className="rounded-3xl border shadow-sm"
+              />
+              <figcaption className="sr-only">受講者用ダッシュボードのイメージ</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        {/* 社会的証明 */}
+        <section id="social-proof" className="py-12">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="sr-only">社会的証明</h2>
+            <div className="rounded-2xl border bg-white p-6">
+              <p className="text-sm text-slate-600">導入・提携（例/調整中）</p>
+              <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4" aria-label="ロゴ一覧">
+                <img
+                  src="https://placehold.co/320x80"
+                  alt="提携先ロゴ1（仮）"
+                  className="h-12 w-full rounded bg-slate-50 object-contain"
+                />
+                <img
+                  src="https://placehold.co/320x80"
+                  alt="提携先ロゴ2（仮）"
+                  className="h-12 w-full rounded bg-slate-50 object-contain"
+                />
+                <img
+                  src="https://placehold.co/320x80"
+                  alt="提携先ロゴ3（仮）"
+                  className="h-12 w-full rounded bg-slate-50 object-contain"
+                />
+                <img
+                  src="https://placehold.co/320x80"
+                  alt="提携先ロゴ4（仮）"
+                  className="h-12 w-full rounded bg-slate-50 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 課題提示 */}
+        <section id="problems" className="bg-white py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-extrabold">多くの学習者がつまずくポイント</h2>
+            <div className="mt-8 grid gap-6 lg:grid-cols-3">
+              <article className="rounded-2xl border p-6">
+                <h3 className="font-bold">基本操作で止まる</h3>
+                <p className="mt-2 text-slate-700">ツールの使い方止まりで、独自データや業務フローに落ちない。</p>
+              </article>
+              <article className="rounded-2xl border p-6">
+                <h3 className="font-bold">成果が定量化できない</h3>
+                <p className="mt-2 text-slate-700">KPI設計や運用ルールが曖昧で、現場が回らない。</p>
+              </article>
+              <article className="rounded-2xl border p-6">
+                <h3 className="font-bold">商業利用に不安</h3>
+                <p className="mt-2 text-slate-700">契約・権利・品質基準が整っておらず、提案に自信が持てない。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        {/* 解決価値 */}
+        <section id="value" className="bg-slate-50 py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-extrabold">私たちが提供する解決</h2>
+            <div className="mt-8 grid gap-6 lg:grid-cols-4">
+              <div className="rounded-2xl border bg-white p-6">
+                <h3 className="text-lg font-bold">24h LINE相談</h3>
+                <p className="mt-2 text-slate-700">
+                  問い合わせはすべてボット一次対応。未解決時のみ人へ自動エスカレーション。
+                </p>
+              </div>
+              <div className="rounded-2xl border bg-white p-6">
+                <h3 className="text-lg font-bold">GPT講座アシスタント</h3>
+                <p className="mt-2 text-slate-700">カリキュラム・用語・コード例を即時回答。ナレッジ更新で精度が育ちます。</p>
+              </div>
+              <div className="rounded-2xl border bg-white p-6">
+                <h3 className="text-lg font-bold">自走できる教材</h3>
+                <p className="mt-2 text-slate-700">5〜10分動画＋テンプレ＋小テストでスモールステップ学習。</p>
+              </div>
+              <div className="rounded-2xl border bg-white p-6">
+                <h3 className="text-lg font-bold">低コスト運営</h3>
+                <p className="mt-2 text-slate-700">最大100名でも人件費最小化。月5,000円以下の価格設定を実現可能に。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* カリキュラム */}
+        <section id="curriculum" className="py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-extrabold">カリキュラム（12週間）</h2>
+            <div className="mt-8 grid gap-6 lg:grid-cols-3">
+              <div className="rounded-2xl border bg-white p-6">
+                <span className="text-xs font-semibold text-indigo-700">Phase 1</span>
+                <h3 className="mt-1 font-bold">基礎固めと業務の時短（1-3週）</h3>
+                <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-slate-700">
+                  <li>プロンプト体系化／資料作成テンプレ</li>
+                  <li>定型業務の半自動化</li>
+                  <li>安全性・著作権・情報管理</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border bg-white p-6">
+                <span className="text-xs font-semibold text-indigo-700">Phase 2</span>
+                <h3 className="mt-1 font-bold">自社データ連携と業務の自動化（4-8週）</h3>
+                <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-slate-700">
+                  <li>データ連携（API/ETL/ワークフロー）</li>
+                  <li>品質KPI・監査設計</li>
+                  <li>PoC→本番運用</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border bg-white p-6">
+                <span className="text-xs font-semibold text-indigo-700">Phase 3</span>
+                <h3 className="mt-1 font-bold">新サービス・新規事業づくり（9-12週）</h3>
+                <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-slate-700">
+                  <li>AI支援プロダクト設計</li>
+                  <li>価格/収益シミュレーション</li>
+                  <li>提案書/試作/実証</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 料金表（比較強調） */}
+        <section id="pricing" className="bg-white py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-extrabold">料金プラン（個人向け）</h2>
+            <p className="mt-2 text-slate-700">
+              ※税込表示の例。決済は月額サブスク想定。上限100名まで快適に運用できる設計です。
+              <br className="hidden sm:block" />
+              質問し放題はフェアユース（公正利用）ポリシー内で運用します。未解決は24h以内に人が対応（
+              <span className="font-semibold">Plusは当日対応目安</span>
+              ）。
+            </p>
+            <div className="mt-8 grid gap-6 lg:grid-cols-4">
+              <div className="rounded-2xl border p-6">
+                <h3 className="font-bold">Free</h3>
+                <p className="mt-1 text-3xl font-black">¥0</p>
+                <ul className="mt-3 space-y-1 text-sm text-slate-700">
+                  <li>週1：最新AIアップデート（メール/YouTube）</li>
+                  <li>入門動画（抜粋）</li>
+                  <li>GPTアシスタント（回数・長さに制限）</li>
+                </ul>
+                <a href="#cta" className="mt-5 inline-flex w-full justify-center rounded-xl border px-4 py-3 font-semibold">
+                  無料で始める
+                </a>
+              </div>
+              <div className="relative rounded-2xl border-2 border-emerald-600 p-6 shadow-sm">
+                <span className="absolute -top-3 left-6 rounded bg-emerald-600 px-2 py-1 text-xs text-white">おすすめ</span>
+                <h3 className="font-bold">Lite</h3>
+                <p className="mt-1 text-3xl font-black">¥1,980/月</p>
+                <ul className="mt-3 space-y-1 text-sm text-slate-700">
+                  <li>全動画＆テンプレ</li>
+                  <li>
+                    <span className="font-semibold">実装レシピ：</span>
+                    コード/プロンプト/手順を毎週追加
+                  </li>
+                  <li>LINEボット質問し放題（自動回答強化）</li>
+                </ul>
+                <a
+                  href="#cta"
+                  className="mt-5 inline-flex w-full justify-center rounded-xl bg-emerald-600 px-4 py-3 font-semibold text-white"
+                >
+                  今すぐ学ぶ
+                </a>
+              </div>
+              <div className="rounded-2xl border p-6">
+                <h3 className="font-bold">Plus</h3>
+                <p className="mt-1 text-3xl font-black">¥4,980/月</p>
+                <ul className="mt-3 space-y-1 text-sm text-slate-700">
+                  <li>
+                    <span className="font-semibold">事業アドバイス：</span>
+                    直接どうするべきかQ&amp;A（テキスト）
+                  </li>
+                  <li>優先対応：未解決は当日中に人が回答</li>
+                  <li>課題レビュー月2回（提案書/コード/プロンプト）</li>
+                </ul>
+                <a
+                  href="#cta"
+                  className="mt-5 inline-flex w-full justify-center rounded-xl bg-slate-900 px-4 py-3 font-semibold text-white"
+                >
+                  Plusで申し込む
+                </a>
+              </div>
+              <div className="rounded-2xl border p-6">
+                <h3 className="font-bold">Mentor Add-on</h3>
+                <p className="mt-1 text-3xl font-black">¥9,800/回</p>
+                <ul className="mt-3 space-y-1 text-sm text-slate-700">
+                  <li>30分スポット面談</li>
+                  <li>提案書/コード個別相談</li>
+                  <li>録画＆メモ提供</li>
+                </ul>
+                <a href="#cta" className="mt-5 inline-flex w-full justify-center rounded-xl border px-4 py-3 font-semibold">
+                  面談を予約
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-10 overflow-x-auto">
+              <table className="w-full overflow-hidden rounded-2xl border text-left text-sm">
+                <caption className="sr-only">プラン比較表</caption>
+                <thead className="bg-slate-50">
+                  <tr>
+                    <th className="p-3">機能</th>
+                    <th className="p-3">Free</th>
+                    <th className="p-3">Lite</th>
+                    <th className="p-3">Plus</th>
+                    <th className="p-3">Mentor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-t">
+                    <td className="p-3">最新AIアップデート</td>
+                    <td className="p-3">週1配信</td>
+                    <td className="p-3">週1配信</td>
+                    <td className="p-3">週1配信</td>
+                    <td className="p-3">-</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="p-3">実装レシピ（コード/プロンプト）</td>
+                    <td className="p-3">一部</td>
+                    <td className="p-3">◯（毎週追加）</td>
+                    <td className="p-3">◎（毎週追加＋応用）</td>
+                    <td className="p-3">-</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="p-3">LINEボット質問</td>
+                    <td className="p-3">△（回数制限）</td>
+                    <td className="p-3">無制限</td>
+                    <td className="p-3">無制限（優先）</td>
+                    <td className="p-3">-</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="p-3">GPTアシスタント</td>
+                    <td className="p-3">基本</td>
+                    <td className="p-3">標準</td>
+                    <td className="p-3">強化</td>
+                    <td className="p-3">-</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="p-3">事業アドバイス（直接Q&amp;A）</td>
+                    <td className="p-3">-</td>
+                    <td className="p-3">-</td>
+                    <td className="p-3">◯（テキスト）</td>
+                    <td className="p-3">-</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="p-3">課題レビュー</td>
+                    <td className="p-3">-</td>
+                    <td className="p-3">-</td>
+                    <td className="p-3">月2回</td>
+                    <td className="p-3">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/* 受講の流れ */}
+        <section id="flow" className="bg-slate-50 py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-extrabold">受講の流れ</h2>
+            <ol className="mt-8 grid list-none gap-6 counter-reset step lg:grid-cols-4">
+              <li className="rounded-2xl border bg-white p-6">
+                <h3 className="font-bold">1. メール/LINE登録</h3>
+                <p className="mt-2 text-slate-700">資料・日程をお届け。特典テンプレも配布。</p>
+              </li>
+              <li className="rounded-2xl border bg-white p-6">
+                <h3 className="font-bold">2. 無料説明会/個別相談</h3>
+                <p className="mt-2 text-slate-700">現状課題をヒアリングし最適プランをご提案。</p>
+              </li>
+              <li className="rounded-2xl border bg-white p-6">
+                <h3 className="font-bold">3. お申込み/手続き</h3>
+                <p className="mt-2 text-slate-700">給付金の適用可否や書類手続きをサポート。</p>
+              </li>
+              <li className="rounded-2xl border bg-white p-6">
+                <h3 className="font-bold">4. 受講開始</h3>
+                <p className="mt-2 text-slate-700">1on1×少人数で実務に落とし込み、成果化へ。</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section id="faq" className="py-16">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-extrabold">よくある質問</h2>
+            <div className="mt-6 divide-y rounded-2xl border bg-white">
+              <details className="group p-6">
+                <summary className="flex cursor-pointer list-none items-center justify-between">
+                  <span className="font-semibold">初心者でもついていけますか？</span>
+                  <span className="text-slate-400 transition group-open:rotate-45">＋</span>
+                </summary>
+                <p className="mt-3 text-slate-700">
+                  はい。基礎から段階的に進め、1on1で個別最適化します。エンジニア経験は必須ではありません。
+                </p>
+              </details>
+              <details className="group p-6">
+                <summary className="flex cursor-pointer list-none items-center justify-between">
+                  <span className="font-semibold">商業利用・収益化はどこまで支援？</span>
+                  <span className="text-slate-400 transition group-open:rotate-45">＋</span>
+                </summary>
+                <p className="mt-3 text-slate-700">
+                  価格設計・提案書・契約雛形・収益モデルの作成まで伴走。実案件での成果創出をゴールに設定します。
+                </p>
+              </details>
+              <details className="group p-6">
+                <summary className="flex cursor-pointer list-none items-center justify-between">
+                  <span className="font-semibold">給付金は必ず受けられますか？</span>
+                  <span className="text-slate-400 transition group-open:rotate-45">＋</span>
+                </summary>
+                <p className="mt-3 text-slate-700">
+                  いいえ。要件・手続・修了要件など所定の条件があります。適用可否は所管機関の判断となります。個別相談で最新条件をご案内します。
+                </p>
+              </details>
+              <details className="group p-6">
+                <summary className="flex cursor-pointer list-none items-center justify-between">
+                  <span className="font-semibold">法人で複数名受講は可能？</span>
+                  <span className="text-slate-400 transition group-open:rotate-45">＋</span>
+                </summary>
+                <p className="mt-3 text-slate-700">
+                  可能です。部署横断の導入・研修設計、評価指標の策定まで対応します。
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        {/* 保証/返金ポリシー */}
+        <section id="guarantee" className="bg-white py-16">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-extrabold">保証 / 返金について</h2>
+            <div className="mt-6 rounded-2xl border bg-slate-50 p-6 text-slate-700">
+              <p className="mb-3">安心して受講いただけるよう、以下のポリシーを設けています（案）。</p>
+              <ul className="list-inside list-disc space-y-1 text-sm">
+                <li>受講開始後◯日以内の全額返金保証（条件あり）</li>
+                <li>日程が合わない場合の受講期振替</li>
+                <li>修了要件/評価試験の再受験サポート</li>
+              </ul>
+              <p className="mt-3 text-xs text-slate-500">
+                ※最終版は受講規約に記載。給付金利用時の返金条件は制度に準拠します。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 記事一覧 */}
+        <section id="articles" className="bg-slate-50 py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-extrabold">記事一覧</h2>
+            <ul className="mt-8 grid gap-4 text-sm sm:grid-cols-2 lg:grid-cols-3">
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/aichi_prefectural_university_data_science_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  愛知県立大学でデータサイエンスを学ぶ！学部・入試・キャリアを徹底解説
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_ai_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  データサイエンスとAIの基礎からキャリアまで|文系出身者向け学習ガイド
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_ai_agent_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  データサイエンスとAIエージェントが拓く未来！業務効率化とビジネス成長の秘訣
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_ai_alternative_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  データサイエンティストはAIに代替される？未来を切り拓くキャリア戦略
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_ai_certification_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  データサイエンス・AI資格でキャリアを拓く！選び方と学習法
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_ai_difference_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  はじめての家庭菜園完全ガイド｜土作りから収穫まで、心豊かなベランダ菜園のすすめ
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_ai_education_program_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  「nan」の向こう側へ：数値化できない「ゆたかさ」を見つける旅
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_ai_relationship.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  未経験・文系でもわかる！データサイエンスとAIの関係性＆キャリアパス
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_ai_responsibility_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  データサイエンスとAIの責任問題：PMが知るべき法的・倫理的課題と実践的対策
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_ai_utilization_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  データサイエンスとAI活用で営業力強化！導入メリットと成功事例
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_aichi_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  データサイエンスを愛知県で学ぶ！社会人向け学習方法とキャリア戦略
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_finance_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  金融業界を革新するデータサイエンスの力！活用事例とキャリアパスを徹底解説
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_finance_job_search_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  データサイエンスで金融業界へ転職！成功の鍵とキャリアパスを徹底解説
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_financial_engineering_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  金融アナリスト必見！データサイエンス×金融工学で拓くキャリア
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_icon_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  【無料あり】データサイエンスアイコンの選び方と活用術！資料・ブログで差をつける
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_stock_investment_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  データサイエンスを株式投資に活用！安定利益へ導く実践手法
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/data_science_stock_price_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  データサイエンスで株価を予測！分析手法から実践まで徹底解説
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/math_data_science_ai_education_program_completion_certificate_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  数理・データサイエンス・AI教育プログラム修了証で市場価値向上！文系でも実践スキルを学ぶ
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/mathematical_data_science_ai_education_program_certification_scheme_benefits_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  【文系学生必見】数理・DS・AI教育プログラム認定制度のメリットとキャリア活用術
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/mathematical_data_science_ai_education_program_job_hunting_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  文系でも就活有利に！数理・データサイエンス・AI教育プログラムの全貌
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/mathematical_data_science_ai_education_program_open_badge_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  数理・データサイエンス・AI教育プログラム×オープンバッジで市場価値を高める！
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/mathematical_data_science_ai_education_program_university_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  文系出身者必見！大学の数理・データサイエンス・AI教育プログラムで未来を掴む
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/mathematics_data_science_ai_education_program_resume_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  【26歳プログラマー向け】数理・データサイエンス・AI教育プログラムの履歴書活用法
+                </a>
+              </li>
+              <li className="rounded-2xl border bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <a href="/articles/nihon_soken_financial_data_science_1.html" className="font-semibold text-slate-900 hover:text-indigo-700">
+                  日本総研が牽引する金融データサイエンス最前線：実践事例とキャリアパス
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* 最終CTA（fold下） */}
+        <section id="cta" className="bg-slate-900 py-16 text-white">
+          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-extrabold">まずは無料で情報収集</h2>
+            <p className="mt-2 text-slate-200">LINEまたはメールで、最新資料・日程・特典テンプレをお届けします。</p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <a href="#" className="inline-flex items-center justify-center rounded-2xl bg-emerald-600 px-5 py-3 font-semibold">
+                LINEで受け取る
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center justify-center rounded-2xl bg-white px-5 py-3 font-semibold text-slate-900"
+              >
+                メールで受け取る
+              </a>
+            </div>
+            <p className="mt-3 text-xs text-slate-400">
+              配信停止はいつでも可能です。個人情報はプライバシーポリシーに基づき適切に管理します。
+            </p>
+          </div>
+        </section>
+      </main>
+
+      {/* 会社情報 */}
+      <footer id="company" className="border-t bg-white py-10">
+        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 md:grid-cols-2 lg:px-8">
+          <section aria-labelledby="company-info">
+            <h2 id="company-info" className="sr-only">
+              会社情報
+            </h2>
+            <div className="flex items-center gap-2 font-semibold">
+              <img src="https://placehold.co/32x32" alt="スクールロゴ（仮）" className="h-8 w-8 rounded" />
+              <span>生成AI実務スクール</span>
+            </div>
+            <address className="mt-3 not-italic text-sm text-slate-700">
+              〒000-0000 東京都〇〇区〇〇 0-0-0 〇〇ビル 0F
+              <br />
+              運営：株式会社〇〇〇〇　/　代表：〇〇 〇〇
+              <br />
+              お問い合わせ：
+              <a href="mailto:info@example.com" className="underline">
+                info@example.com
+              </a>
+            </address>
+            <p className="mt-2 text-xs text-slate-500">
+              ※専門実践教育訓練給付金は厚生労働省の制度です。適用条件・支給率・上限等は変更される場合があります。最新の公式情報をご確認ください。
+            </p>
+          </section>
+          <section className="text-sm text-slate-600 md:text-right">
+            <a href="#" className="hover:underline">
+              利用規約
+            </a>
+            <span className="mx-2">・</span>
+            <a href="#" className="hover:underline">
+              プライバシーポリシー
+            </a>
+            <p className="mt-3 text-slate-500">© 2025 Your Company. All rights reserved.</p>
+          </section>
+        </div>
+      </footer>
+
+      {/*
+        編集すべき箇所一覧
+        1) <link rel="canonical"> と og/twitter の URL/画像を実ドメインに変更
+        2) ヘッダーロゴ画像・会社名・住所・代表者名・問い合わせメールの実データ
+        3) 料金の最終金額・税込/税抜表記・給付金の適用範囲/注意文
+        4) 返金/保証ポリシーの日数・条件（給付金利用時の例外含む）
+        5) LINE登録/メール登録のリンク先（LIFF/友だち追加URL・MA/フォームURL）
+        6) 社会的証明：実績ロゴ・受講者の声・メディア掲載（画像alt必須）
+        7) カリキュラム週次詳細・使用ツール・成果物サンプル
+        8) 法務文書（利用規約/プラポリ/特商法）へのリンク先
+        9) CTAボタン文言のA/Bバリエーション（例：今すぐ資料を受け取る/30秒で登録）
+        10) アクセシビリティ確認（alt, figcaption, aria-label）と計測タグ（GTM/GA）
+      */}
+    </div>
+  );
+};
+
+export default App;
