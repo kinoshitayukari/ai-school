@@ -25,7 +25,21 @@
   <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="/index.html" class="flex items-center gap-2 font-semibold" aria-label="ホームへ">
-        <img src="https://placehold.co/32x32" alt="スクールロゴ（仮）" class="h-8 w-8 rounded" />
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-emerald-400 shadow-inner">
+          <svg viewBox="0 0 48 48" role="img" aria-hidden="true" class="h-8 w-8 text-white">
+            <title>AI School ロゴ</title>
+            <defs>
+              <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C7D2FE" />
+                <stop offset="50%" stop-color="#A855F7" />
+                <stop offset="100%" stop-color="#34D399" />
+              </linearGradient>
+            </defs>
+            <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#logoGradient)" opacity="0.35" />
+            <path d="M12 32c0-7.732 6.268-14 14-14 3.866 0 7 3.134 7 7v11h-4V25c0-1.657-1.343-3-3-3-5.523 0-10 4.477-10 10v6h-4v-6z" fill="currentColor" />
+            <path d="M18 17c0-3.314 2.686-6 6-6s6 2.686 6 6-2.686 6-6 6-6-2.686-6-6z" fill="currentColor" opacity="0.85" />
+          </svg>
+        </span>
         <span>生成AI実務スクール</span>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm" aria-label="メインメニュー">
@@ -84,10 +98,50 @@
       <div class="rounded-2xl border bg-white p-6">
         <p class="text-sm text-slate-600">導入・提携（例/調整中）</p>
         <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4" aria-label="ロゴ一覧">
-          <img src="https://placehold.co/320x80" alt="提携先ロゴ1（仮）" class="h-12 w-full object-contain bg-slate-50 rounded" />
-          <img src="https://placehold.co/320x80" alt="提携先ロゴ2（仮）" class="h-12 w-full object-contain bg-slate-50 rounded" />
-          <img src="https://placehold.co/320x80" alt="提携先ロゴ3（仮）" class="h-12 w-full object-contain bg-slate-50 rounded" />
-          <img src="https://placehold.co/320x80" alt="提携先ロゴ4（仮）" class="h-12 w-full object-contain bg-slate-50 rounded" />
+          <figure class="flex h-20 w-full items-center justify-center rounded-xl border border-slate-200 bg-slate-50 p-3">
+            <svg viewBox="0 0 160 48" role="img" aria-labelledby="logo-aurora" class="h-full w-full text-indigo-600">
+              <title id="logo-aurora">Aurora Analytics ロゴ</title>
+              <rect x="4" y="6" width="32" height="32" rx="10" fill="#EEF2FF" />
+              <path d="M12 30l8-16 8 16h-4.2l-3.8-7.8L16 30H12z" fill="#4F46E5" />
+              <text x="48" y="30" font-size="16" font-weight="600" fill="#312E81" font-family="'Noto Sans JP', 'Segoe UI', sans-serif">Aurora</text>
+              <text x="48" y="40" font-size="10" letter-spacing="2" fill="#818CF8" font-family="'Noto Sans JP', 'Segoe UI', sans-serif">ANALYTICS</text>
+            </svg>
+          </figure>
+          <figure class="flex h-20 w-full items-center justify-center rounded-xl border border-slate-200 bg-slate-50 p-3">
+            <svg viewBox="0 0 160 48" role="img" aria-labelledby="logo-orbit" class="h-full w-full text-emerald-600">
+              <title id="logo-orbit">Orbit Systems ロゴ</title>
+              <circle cx="22" cy="24" r="14" fill="#ECFDF5" />
+              <path d="M22 10a12 12 0 0111.78 9.71 22 22 0 01-23.56 0A12 12 0 0122 10z" fill="#10B981" opacity="0.8" />
+              <path d="M12 28c3 3.5 6.5 5.2 10 5.2S29 31.5 32 28" stroke="#047857" stroke-width="2.5" stroke-linecap="round" fill="none" />
+              <text x="48" y="30" font-size="16" font-weight="600" fill="#064E3B" font-family="'Noto Sans JP', 'Segoe UI', sans-serif">Orbit</text>
+              <text x="48" y="40" font-size="10" letter-spacing="2" fill="#34D399" font-family="'Noto Sans JP', 'Segoe UI', sans-serif">SYSTEMS</text>
+            </svg>
+          </figure>
+          <figure class="flex h-20 w-full items-center justify-center rounded-xl border border-slate-200 bg-slate-50 p-3">
+            <svg viewBox="0 0 160 48" role="img" aria-labelledby="logo-nova" class="h-full w-full text-sky-600">
+              <title id="logo-nova">Nova Works ロゴ</title>
+              <g transform="translate(6 6)">
+                <rect width="32" height="32" rx="8" fill="#E0F2FE" />
+                <path d="M8 24l8-16 8 16-8-4-8 4z" fill="#0284C7" />
+                <circle cx="16" cy="14" r="4" fill="#0EA5E9" />
+              </g>
+              <text x="48" y="30" font-size="16" font-weight="600" fill="#0C4A6E" font-family="'Noto Sans JP', 'Segoe UI', sans-serif">Nova</text>
+              <text x="48" y="40" font-size="10" letter-spacing="2" fill="#38BDF8" font-family="'Noto Sans JP', 'Segoe UI', sans-serif">WORKS</text>
+            </svg>
+          </figure>
+          <figure class="flex h-20 w-full items-center justify-center rounded-xl border border-slate-200 bg-slate-50 p-3">
+            <svg viewBox="0 0 160 48" role="img" aria-labelledby="logo-horizon" class="h-full w-full text-rose-600">
+              <title id="logo-horizon">Horizon Labs ロゴ</title>
+              <g transform="translate(6 8)">
+                <path d="M4 20c4-8 12-12 20-12s16 4 20 12" stroke="#F87171" stroke-width="3" stroke-linecap="round" fill="none" />
+                <circle cx="12" cy="20" r="3" fill="#F43F5E" />
+                <circle cx="28" cy="20" r="3" fill="#BE123C" />
+                <rect x="10" y="4" width="20" height="6" rx="3" fill="#FEE2E2" />
+              </g>
+              <text x="48" y="30" font-size="16" font-weight="600" fill="#881337" font-family="'Noto Sans JP', 'Segoe UI', sans-serif">Horizon</text>
+              <text x="48" y="40" font-size="10" letter-spacing="2" fill="#FB7185" font-family="'Noto Sans JP', 'Segoe UI', sans-serif">LABS</text>
+            </svg>
+          </figure>
         </div>
       </div>
     </div>
